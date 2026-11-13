@@ -1,0 +1,88 @@
+.hotel-page {
+  padding: 80px 8%;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.hotel-page h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hotel-page > p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.hotel-page input {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto 40px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.hotel-page input:focus {
+  border-color: #0d6efd;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.hotel-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+}
+
+.hotel-card h2 {
+  margin-bottom: 10px;
+}
+
+.hotel-card h3 {
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.hotel-card p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.hotel-card .hotel-stars {
+  color: #f5b400;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.hotel-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hotel-card button:hover {
+  background: #0b5ed7;
+}

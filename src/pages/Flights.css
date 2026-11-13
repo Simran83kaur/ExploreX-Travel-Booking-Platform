@@ -1,0 +1,312 @@
+.flights-page {
+  padding: 70px 8%;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.flights-page h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.flights-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 17px;
+}
+
+/* SEARCH AREA */
+
+.flight-search-area {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 18px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.flights-page input {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background: white;
+}
+
+.flights-page input:focus {
+  border-color: #0d6efd;
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.date-box label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.date-box input {
+  max-width: 220px;
+}
+
+/* SELECTED DATE */
+
+.selected-date {
+  text-align: center;
+  margin: 20px 0 35px;
+  color: #555;
+  font-size: 16px;
+}
+
+.selected-date strong {
+  color: #0d6efd;
+}
+
+/* FLIGHT GRID */
+
+.flight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* FLIGHT CARD */
+
+.flight-card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.flight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* AIRLINE */
+
+.airline-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.airline-name h2 {
+  margin: 0;
+  font-size: 21px;
+  color: #222;
+}
+
+.airplane-icon {
+  font-size: 25px;
+}
+
+/* ROUTE */
+
+.flight-route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.airport {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.airport strong {
+  font-size: 21px;
+  color: #222;
+}
+
+.airport small {
+  color: #777;
+  font-size: 13px;
+}
+
+.route-line {
+  flex: 1;
+  margin: 0 15px;
+  border-bottom: 2px dashed #bbb;
+  text-align: center;
+  position: relative;
+}
+
+.route-line span {
+  background: white;
+  padding: 0 8px;
+  color: #0d6efd;
+  font-size: 20px;
+}
+
+/* INFO */
+
+.flight-info {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.flight-info p {
+  color: #555;
+  margin: 9px 0;
+  font-size: 14px;
+}
+
+/* BOTTOM */
+
+.flight-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.flight-card h3 {
+  font-size: 22px;
+  color: #0d6efd;
+  margin: 0;
+}
+
+.flight-card button {
+  padding: 11px 18px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.flight-card button:hover {
+  background: #0b5ed7;
+}
+
+/* NO FLIGHTS */
+
+.no-flights {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .flights-page {
+    padding: 50px 5%;
+  }
+
+  .flights-page h1 {
+    font-size: 32px;
+  }
+
+  .flight-search-area {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .flights-page input,
+  .date-box input {
+    max-width: 100%;
+  }
+
+  .flight-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flight-card button {
+    width: 100%;
+  }
+}
+
+/* DATE HINT */
+
+.date-box {
+  position: relative;
+}
+
+.date-hint {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0d6efd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 10;
+  animation: dateHint 0.4s ease;
+}
+
+.date-hint::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #0d6efd;
+}
+
+.hint-arrow {
+  font-size: 20px;
+  margin-right: 6px;
+  animation: arrowBounce 0.8s infinite;
+}
+
+.date-highlight input {
+  border: 2px solid #0d6efd !important;
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+}
+
+.date-highlight label {
+  color: #0d6efd;
+}
+
+@keyframes dateHint {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes arrowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}

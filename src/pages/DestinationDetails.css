@@ -1,0 +1,735 @@
+
+
+.destination-details {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 40px auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  color: #111827;
+}
+
+
+
+.destination-not-found {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 80px auto;
+
+  text-align: center;
+}
+
+.destination-not-found h2 {
+  margin-bottom: 20px;
+}
+
+.details-back-btn {
+  border: none;
+
+  background: #0878f9;
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+
+.details-hero {
+  width: 100%;
+  min-height: 430px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+}
+
+
+.details-hero-image {
+  width: 100%;
+  height: 430px;
+
+  overflow: hidden;
+
+  min-width: 0;
+}
+
+.details-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+
+.details-hero-content {
+  width: 100%;
+  height: 430px;
+
+  min-width: 0;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+
+.details-location {
+  display: block;
+
+  color: #777;
+
+  font-size: 14px;
+
+  margin-bottom: 8px;
+}
+
+
+.details-hero-content h1 {
+  font-size: 42px;
+
+  margin: 0 0 15px;
+
+  color: #111827;
+
+  line-height: 1.1;
+}
+
+.details-description {
+  color: #666;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+
+  margin: 0 0 25px;
+}
+
+
+/* =========================================
+   QUICK INFO
+========================================= */
+
+.details-quick-info {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+
+/* INFO BOX */
+
+.details-info-box {
+  background: #f5f7fa;
+
+  padding: 15px 8px;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.details-info-box span {
+  display: block;
+
+  font-size: 20px;
+
+  margin-bottom: 6px;
+}
+
+
+/* VALUE */
+
+.details-info-box strong {
+  display: block;
+
+  font-size: 15px;
+
+  color: #111;
+
+  white-space: nowrap;
+}
+
+
+/* LABEL */
+
+.details-info-box small {
+  display: block;
+
+  font-size: 11px;
+
+  color: #888;
+
+  margin-top: 4px;
+}
+
+
+.details-hero-bottom {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+/* PRICE */
+
+.details-price small {
+  display: block;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+.details-price h2 {
+  color: #0878f9;
+
+  font-size: 25px;
+
+  margin: 4px 0 0;
+}
+
+
+/* BUTTON */
+
+.details-book-btn {
+  border: none;
+
+  background: #0878f9;
+
+  color: white;
+
+  padding: 13px 24px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.2s;
+}
+
+.details-book-btn:hover {
+  background: #0666d6;
+}
+
+.details-section {
+  width: 100%;
+
+  margin-top: 50px;
+}
+
+
+
+.details-section-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+
+/* NUMBER */
+
+.details-section-heading > span {
+  color: #0878f9;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  padding-top: 5px;
+}
+
+
+/* HEADING */
+
+.details-section-heading h2 {
+  margin: 0;
+
+  font-size: 25px;
+
+  color: #111827;
+}
+
+
+/* PARAGRAPH */
+
+.details-section-heading p {
+  margin: 7px 0 0;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   TRIP OVERVIEW
+========================================= */
+
+.details-overview-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+
+/* CARD */
+
+.details-overview-card {
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.details-overview-card > span {
+  font-size: 20px;
+}
+
+
+/* LABEL */
+
+.details-overview-card small {
+  display: block;
+
+  color: #888;
+
+  font-size: 12px;
+
+  margin-bottom: 5px;
+}
+
+
+/* VALUE */
+
+.details-overview-card strong {
+  color: #111;
+
+  font-size: 14px;
+}
+
+
+.details-places-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+
+/* PLACE CARD */
+
+.details-place-card {
+  position: relative;
+
+  height: 190px;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: white;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* IMAGE */
+
+.details-place-card img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* OVERLAY */
+
+.details-place-overlay {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 30px 15px 15px;
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(0, 0, 0, 0.8)
+    );
+
+  color: white;
+}
+
+
+/* NUMBER */
+
+.details-place-overlay span {
+  font-size: 11px;
+
+  font-weight: bold;
+}
+
+
+/* NAME */
+
+.details-place-overlay h3 {
+  margin: 5px 0 0;
+
+  font-size: 16px;
+}
+
+
+
+.details-includes-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+
+/* CARD */
+
+.details-include-card {
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+
+  gap: 15px;
+
+  box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.details-include-icon {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #eef5ff;
+
+  border-radius: 8px;
+
+  font-size: 20px;
+}
+
+
+/* HEADING */
+
+.details-include-card h3 {
+  margin: 0 0 8px;
+
+  font-size: 17px;
+}
+
+
+/* HOTEL / FLIGHT NAME */
+
+.details-include-card strong {
+  display: block;
+
+  margin-bottom: 6px;
+}
+
+
+/* TEXT */
+
+.details-include-card p {
+  color: #888;
+
+  font-size: 13px;
+
+  margin: 4px 0;
+}
+
+
+
+.details-final-booking {
+  width: 100%;
+
+  margin-top: 50px;
+
+  padding: 25px 30px;
+
+  background: #111827;
+
+  color: white;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* SMALL TEXT */
+
+.details-final-booking small {
+  color: #bbb;
+
+  font-size: 11px;
+}
+
+
+/* HEADING */
+
+.details-final-booking h2 {
+  margin: 5px 0 0;
+
+  font-size: 22px;
+}
+
+
+/* FINAL BUTTON */
+
+.details-final-btn {
+  border: none;
+
+  background: white;
+
+  color: #111827;
+
+  padding: 13px 24px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.details-final-btn:hover {
+  background: #f1f1f1;
+}
+
+
+@media (max-width: 900px) {
+
+  .details-hero {
+    grid-template-columns: 1fr;
+  }
+
+
+  .details-hero-image {
+    height: 350px;
+  }
+
+
+  .details-hero-content {
+    height: auto;
+
+    min-height: 400px;
+
+    padding: 30px;
+  }
+
+
+  .details-overview-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .details-places-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .details-includes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .destination-details {
+    padding: 0 12px;
+
+    margin-top: 25px;
+  }
+
+
+  .details-hero {
+    grid-template-columns: 1fr;
+
+    border-radius: 12px;
+  }
+
+
+  .details-hero-image {
+    height: 280px;
+  }
+
+
+  .details-hero-content {
+    height: auto;
+
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+
+  .details-hero-content h1 {
+    font-size: 32px;
+  }
+
+
+  .details-description {
+    font-size: 14px;
+  }
+
+
+  .details-quick-info {
+    grid-template-columns: 1fr;
+  }
+
+
+  .details-hero-bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .details-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .details-places-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .details-final-booking {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
